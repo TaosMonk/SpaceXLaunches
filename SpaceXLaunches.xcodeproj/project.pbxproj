@@ -12,6 +12,8 @@
 		F59239932384720900DD6BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59239912384720900DD6BDF /* Main.storyboard */; };
 		F59239952384721000DD6BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59239942384721000DD6BDF /* Assets.xcassets */; };
 		F59239982384721000DD6BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59239962384721000DD6BDF /* LaunchScreen.storyboard */; };
+		F59239A82384885200DD6BDF /* LaunchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59239A72384885200DD6BDF /* LaunchDetailsVC.swift */; };
+		F59239AA2384890800DD6BDF /* LaunchesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59239A92384890800DD6BDF /* LaunchesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F59239942384721000DD6BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59239972384721000DD6BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59239992384721000DD6BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59239A72384885200DD6BDF /* LaunchDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsVC.swift; sourceTree = "<group>"; };
+		F59239A92384890800DD6BDF /* LaunchesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F59239942384721000DD6BDF /* Assets.xcassets */,
 				F59239962384721000DD6BDF /* LaunchScreen.storyboard */,
 				F59239992384721000DD6BDF /* Info.plist */,
+				F59239A72384885200DD6BDF /* LaunchDetailsVC.swift */,
+				F59239A92384890800DD6BDF /* LaunchesListVC.swift */,
 			);
 			path = SpaceXLaunches;
 			sourceTree = "<group>";
@@ -90,6 +96,9 @@
 		F59239822384720900DD6BDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					button,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vlad Demenchoock";
@@ -136,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59239902384720900DD6BDF /* ViewController.swift in Sources */,
+				F59239A82384885200DD6BDF /* LaunchDetailsVC.swift in Sources */,
 				F592398E2384720900DD6BDF /* AppDelegate.swift in Sources */,
+				F59239AA2384890800DD6BDF /* LaunchesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
