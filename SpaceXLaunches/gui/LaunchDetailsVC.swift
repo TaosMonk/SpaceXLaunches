@@ -30,18 +30,18 @@ class LaunchDetailsVC: UIViewController {
     
     private func configure () {
         guard let index = launchIndex else {return }
-        let details = LaunchDataService.shared.getLaunchInfo(for: index)
+        guard let details = LaunchDataService.shared.getLaunchInfo(for: index) else {return }
         
-        let url = URL(string: details.imageLink)
+        let url = URL(string: details.links.flickr_images?.first ?? "")
         launchImage.kf.setImage(with: url, placeholder: UIImage(named: "launchPlaceholder"))
         {[weak self] _,_,_,_ in
             self?.imageLoadingIndicator.stopAnimating()
         }
         
-        launchDetails.text = details.launchDetails
-        launchYearValue.text = details.launchYear
-        launchNumberValue.text = "\(details.flightNumber)"
-        missionNameValue.text = details.missionName
+        launchDetails.text = details.details
+        launchYearValue.text = details.launch_year
+        launchNumberValue.text = "\(details.flight_number)"
+        missionNameValue.text = details.mission_name
         
     }
     

@@ -7,29 +7,60 @@
 //
 
 import Foundation
+import Alamofire
 
 class LaunchDataService {
     var launchesNumber: Int {
         return _launchesList?.count ?? 0
     }
     
-    var launchList: [LaunchInfoModel] {
-        prepareTestData()
-        return _launchesList!
+    var launchList: [LaunchInfoModel]? {
+        //prepareTestData()
+        return _launchesList
     }
     
-    func getLaunchInfo (for index: Int) -> LaunchInfoModel {
+    func getLaunchInfo (for index: Int) -> LaunchInfoModel? {
         //TODO: test, replace with real model
-        return LaunchInfoModel()
+        guard let list = _launchesList, list.count > index
+        else {return nil}
+        return list[index]
     }
     
-    private func prepareTestData () {
-        guard _launchesList == nil else {return }
-        _launchesList = LaunchInfoModel.getTestData()
+//    private func prepareTestData () {
+//        guard _launchesList == nil else {return }
+//        _launchesList = LaunchInfoModel.getTestData()
+//    }
+    
+    func updateLaunchList (completion: @escaping (Bool) -> Void)
+    {
+        Alamofire.request("https://api.spacexdata.com/v3/launches").responseJSON
+        { response in
+            guard response.error == nil
+            else
+            {
+                print(response.error!)
+                completion(false)
+                return
+            }
+            guard let data = response.data else {print("No Data");return}
+            do
+            {
+                self._launchesList = try JSONDecoder().decode([LaunchInfoModel].self, from: data)
+                print(self._launchesList)
+                completion(true)
+            }
+            catch
+            {
+                print(error)
+                completion(false)
+            }
+        }
     }
+    
 // MARK: - PROPERTIES
     
     private var _launchesList: [LaunchInfoModel]?
+    private static let serviceURL: String = "https://api.spacexdata.com/v3/launches"
     
 // MARK: - PERSISTENCE
     

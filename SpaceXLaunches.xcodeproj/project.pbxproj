@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A027A28B3A35B992E9440330 /* Pods_SpaceXLaunches.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2574A7436586924E02150C28 /* Pods_SpaceXLaunches.framework */; };
+		D53F634DEC7E1BE65551E17E /* Pods_SpaceXLaunches.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5A09DA102C92D937147F96 /* Pods_SpaceXLaunches.framework */; };
 		F52D64F823897C7000A5375C /* LaunchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D64F723897C7000A5375C /* LaunchDataService.swift */; };
 		F52D64FA2389802900A5375C /* LaunchInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D64F92389802900A5375C /* LaunchInfoModel.swift */; };
 		F592398E2384720900DD6BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592398D2384720900DD6BDF /* AppDelegate.swift */; };
@@ -19,12 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2574A7436586924E02150C28 /* Pods_SpaceXLaunches.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunches.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6B4425FA33C1E92C4E280E7 /* Pods-SpaceXLaunches.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.release.xcconfig"; sourceTree = "<group>"; };
-		C0C625E5AD2B999D87FA0F5F /* Pods-SpaceXLaunches.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.debug.xcconfig"; sourceTree = "<group>"; };
+		6CC72900C3301791A48D2202 /* Pods-SpaceXLaunches.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.release.xcconfig"; sourceTree = "<group>"; };
+		CD5A09DA102C92D937147F96 /* Pods_SpaceXLaunches.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunches.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB42210D077BCD2D94C521AD /* Pods-SpaceXLaunches.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.debug.xcconfig"; sourceTree = "<group>"; };
 		F52D64F723897C7000A5375C /* LaunchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDataService.swift; sourceTree = "<group>"; };
 		F52D64F92389802900A5375C /* LaunchInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfoModel.swift; sourceTree = "<group>"; };
-		F52D650B2389896E00A5375C /* SpaceXLaunches copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SpaceXLaunches copy-Info.plist"; path = "/Users/vlad/Documents/iOS Projects/SpaceXLaunches/SpaceXLaunches copy-Info.plist"; sourceTree = "<absolute>"; };
 		F592398A2384720900DD6BDF /* SpaceXLaunches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F592398D2384720900DD6BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59239922384720900DD6BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A027A28B3A35B992E9440330 /* Pods_SpaceXLaunches.framework in Frameworks */,
+				D53F634DEC7E1BE65551E17E /* Pods_SpaceXLaunches.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,17 +49,16 @@
 		94F4A1015BBBAD9114545282 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0C625E5AD2B999D87FA0F5F /* Pods-SpaceXLaunches.debug.xcconfig */,
-				A6B4425FA33C1E92C4E280E7 /* Pods-SpaceXLaunches.release.xcconfig */,
+				DB42210D077BCD2D94C521AD /* Pods-SpaceXLaunches.debug.xcconfig */,
+				6CC72900C3301791A48D2202 /* Pods-SpaceXLaunches.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EB6D190F339826824EAD0CD1 /* Frameworks */ = {
+		B859109997DE0F1A7B9A3B89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2574A7436586924E02150C28 /* Pods_SpaceXLaunches.framework */,
+				CD5A09DA102C92D937147F96 /* Pods_SpaceXLaunches.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +105,8 @@
 			children = (
 				F592398C2384720900DD6BDF /* SpaceXLaunches */,
 				F592398B2384720900DD6BDF /* Products */,
-				F52D650B2389896E00A5375C /* SpaceXLaunches copy-Info.plist */,
 				94F4A1015BBBAD9114545282 /* Pods */,
-				EB6D190F339826824EAD0CD1 /* Frameworks */,
+				B859109997DE0F1A7B9A3B89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,11 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F592399C2384721000DD6BDF /* Build configuration list for PBXNativeTarget "SpaceXLaunches" */;
 			buildPhases = (
-				7CDB65D1B86823EEB8CFCD95 /* [CP] Check Pods Manifest.lock */,
+				36C15162B25BB4D36ED50195 /* [CP] Check Pods Manifest.lock */,
 				F59239862384720900DD6BDF /* Sources */,
 				F59239872384720900DD6BDF /* Frameworks */,
 				F59239882384720900DD6BDF /* Resources */,
-				895960380A20EA48F643266B /* [CP] Embed Pods Frameworks */,
+				33B90C33C4B9AEE8C6475801 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,7 +201,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7CDB65D1B86823EEB8CFCD95 /* [CP] Check Pods Manifest.lock */ = {
+		33B90C33C4B9AEE8C6475801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C15162B25BB4D36ED50195 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,23 +238,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		895960380A20EA48F643266B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -396,7 +393,7 @@
 		};
 		F592399D2384721000DD6BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C625E5AD2B999D87FA0F5F /* Pods-SpaceXLaunches.debug.xcconfig */;
+			baseConfigurationReference = DB42210D077BCD2D94C521AD /* Pods-SpaceXLaunches.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,7 +412,7 @@
 		};
 		F592399E2384721000DD6BDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6B4425FA33C1E92C4E280E7 /* Pods-SpaceXLaunches.release.xcconfig */;
+			baseConfigurationReference = 6CC72900C3301791A48D2202 /* Pods-SpaceXLaunches.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
