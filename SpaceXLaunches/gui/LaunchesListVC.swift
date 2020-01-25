@@ -41,6 +41,9 @@ class LaunchesListVC: UIViewController, UISearchControllerDelegate, UISearchResu
     @IBOutlet weak var launchSearchBar: UISearchBar!
     
     private func updateLaunchList () {
+        // weak reference to self so that only LaunchDataService.shared.updateLaunchList holds the closure
+        // more about this particular structure at https://learnappmaking.com/escaping-closures-swift/
+        
         LaunchDataService.shared.updateLaunchList
         { [weak self] (success) in
             guard success else {return } // TODO: handle error, data inaccessable
@@ -57,6 +60,7 @@ class LaunchesListVC: UIViewController, UISearchControllerDelegate, UISearchResu
     }
     
     func setupSearchBar () {
+        // for search bar to work correctly, LaunchesListVC must implement protocols UISearchControllerDelegate, UISearchResultsUpdating
         self.searchController = UISearchController(searchResultsController:  nil)
         
         self.searchController.searchResultsUpdater = self
@@ -76,6 +80,7 @@ class LaunchesListVC: UIViewController, UISearchControllerDelegate, UISearchResu
     }
 
     @IBAction func clickSort(_ sender: Any) {
+        // TODO: make it so that it just contains "Soring mode" header
         let alert = UIAlertController(title: "Hello, World", message: "This is my first app!", preferredStyle: .actionSheet)
         
         let sortByYear = UIAlertAction(title: "Sort by launch year", style: .default, handler:
@@ -123,9 +128,9 @@ class LaunchesListVC: UIViewController, UISearchControllerDelegate, UISearchResu
     func restoreSorting () {
         guard sortMode != .noSort else {return }
         switch sortMode {
-        case .byName: sortByName()
-        case .byYear: sortByYear()
-        case .byNumber: sortByNumber()
+            case .byName: sortByName()
+            case .byYear: sortByYear()
+            case .byNumber: sortByNumber()
             default: break
         }
         
@@ -163,7 +168,7 @@ extension LaunchesListVC: UITableViewDelegate, UITableViewDataSource {
 extension LaunchesListVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ launchSearchBar: UISearchBar) {
         launchList = launchList?.filter {$0.mission_name.hasPrefix(launchSearchBar.text!) }
-        print("Elements in list: \(launchList?.count)")
+        print("Elements in list: \(launchList?.count ?? 0)")
         self.launchTable.reloadData()
     }
     
