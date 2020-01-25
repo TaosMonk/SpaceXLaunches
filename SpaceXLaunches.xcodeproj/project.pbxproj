@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D53F634DEC7E1BE65551E17E /* Pods_SpaceXLaunches.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5A09DA102C92D937147F96 /* Pods_SpaceXLaunches.framework */; };
+		F51B5CB423DC5BE90071AA0E /* LaunchInfoLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B5CB323DC5BE90071AA0E /* LaunchInfoLinks.swift */; };
+		F51B5CB723DC5C680071AA0E /* LaunchesListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B5CB623DC5C680071AA0E /* LaunchesListVM.swift */; };
+		F51B5CB923DC5D5C0071AA0E /* LaunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B5CB823DC5D5C0071AA0E /* LaunchDataSource.swift */; };
+		F51B5CBB23DC5D8B0071AA0E /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B5CBA23DC5D8B0071AA0E /* DynamicValue.swift */; };
+		F51B5CBF23DC7EC70071AA0E /* MVVMLaunchesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B5CBE23DC7EC70071AA0E /* MVVMLaunchesListVC.swift */; };
 		F52D64F823897C7000A5375C /* LaunchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D64F723897C7000A5375C /* LaunchDataService.swift */; };
 		F52D64FA2389802900A5375C /* LaunchInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52D64F92389802900A5375C /* LaunchInfoModel.swift */; };
 		F592398E2384720900DD6BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592398D2384720900DD6BDF /* AppDelegate.swift */; };
@@ -22,6 +27,11 @@
 		6CC72900C3301791A48D2202 /* Pods-SpaceXLaunches.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.release.xcconfig"; sourceTree = "<group>"; };
 		CD5A09DA102C92D937147F96 /* Pods_SpaceXLaunches.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunches.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB42210D077BCD2D94C521AD /* Pods-SpaceXLaunches.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunches.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunches/Pods-SpaceXLaunches.debug.xcconfig"; sourceTree = "<group>"; };
+		F51B5CB323DC5BE90071AA0E /* LaunchInfoLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfoLinks.swift; sourceTree = "<group>"; };
+		F51B5CB623DC5C680071AA0E /* LaunchesListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListVM.swift; sourceTree = "<group>"; };
+		F51B5CB823DC5D5C0071AA0E /* LaunchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDataSource.swift; sourceTree = "<group>"; };
+		F51B5CBA23DC5D8B0071AA0E /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		F51B5CBE23DC7EC70071AA0E /* MVVMLaunchesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLaunchesListVC.swift; sourceTree = "<group>"; };
 		F52D64F723897C7000A5375C /* LaunchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDataService.swift; sourceTree = "<group>"; };
 		F52D64F92389802900A5375C /* LaunchInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfoModel.swift; sourceTree = "<group>"; };
 		F592398A2384720900DD6BDF /* SpaceXLaunches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunches.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +73,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F51B5CB523DC5C450071AA0E /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F51B5CB623DC5C680071AA0E /* LaunchesListVM.swift */,
+				F51B5CB823DC5D5C0071AA0E /* LaunchDataSource.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		F51B5CBC23DC5F350071AA0E /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F52D64F723897C7000A5375C /* LaunchDataService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F51B5CBD23DC7EB20071AA0E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F51B5CBE23DC7EC70071AA0E /* MVVMLaunchesListVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F52D64F223897B9200A5375C /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +129,9 @@
 		F52D64F623897BCD00A5375C /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F52D64F723897C7000A5375C /* LaunchDataService.swift */,
+				F51B5CBA23DC5D8B0071AA0E /* DynamicValue.swift */,
 				F52D64F92389802900A5375C /* LaunchInfoModel.swift */,
+				F51B5CB323DC5BE90071AA0E /* LaunchInfoLinks.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -121,6 +157,9 @@
 		F592398C2384720900DD6BDF /* SpaceXLaunches */ = {
 			isa = PBXGroup;
 			children = (
+				F51B5CBD23DC7EB20071AA0E /* view */,
+				F51B5CBC23DC5F350071AA0E /* service */,
+				F51B5CB523DC5C450071AA0E /* viewmodel */,
 				F52D64F223897B9200A5375C /* resources */,
 				F52D64F323897BA100A5375C /* app */,
 				F52D64F423897BAD00A5375C /* gui */,
@@ -237,11 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51B5CB423DC5BE90071AA0E /* LaunchInfoLinks.swift in Sources */,
 				F52D64F823897C7000A5375C /* LaunchDataService.swift in Sources */,
+				F51B5CB923DC5D5C0071AA0E /* LaunchDataSource.swift in Sources */,
+				F51B5CB723DC5C680071AA0E /* LaunchesListVM.swift in Sources */,
 				F59239A82384885200DD6BDF /* LaunchDetailsVC.swift in Sources */,
 				F52D64FA2389802900A5375C /* LaunchInfoModel.swift in Sources */,
 				F592398E2384720900DD6BDF /* AppDelegate.swift in Sources */,
+				F51B5CBB23DC5D8B0071AA0E /* DynamicValue.swift in Sources */,
 				F59239AA2384890800DD6BDF /* LaunchesListVC.swift in Sources */,
+				F51B5CBF23DC7EC70071AA0E /* MVVMLaunchesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

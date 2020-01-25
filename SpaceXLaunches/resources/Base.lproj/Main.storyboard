@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-753" y="-798"/>
         </scene>
-        <!--Launches ListVC-->
+        <!--Launches List View Controller-->
         <scene sceneID="vfx-uX-Kah">
             <objects>
-                <viewController id="aWN-OQ-Uns" customClass="LaunchesListVC" customModule="SpaceXLaunches" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aWN-OQ-Uns" customClass="MVVMLaunchesListViewController" customModule="SpaceXLaunches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5q-Nm-Iqo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
