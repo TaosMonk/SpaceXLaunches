@@ -8,6 +8,7 @@
 
 import Foundation
 
+//struct is Codable for JSONDecoder to handle it
 struct LaunchInfoModel: Codable
 {
     let flight_number:Int
