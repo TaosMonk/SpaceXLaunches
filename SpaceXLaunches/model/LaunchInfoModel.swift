@@ -106,9 +106,3 @@ struct LaunchInfoModel: Codable
 //        flightNumber = 95
 //    }
 //}
-
-struct LaunchInfoLinks: Codable
-{
-    let mission_patch:String?
-    let flickr_images:[String]?
-}
