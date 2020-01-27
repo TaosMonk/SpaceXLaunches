@@ -12,18 +12,20 @@ class LaunchesListVM {
     
     var launchesList : [LaunchInfoModel]?
     var dataSource : LaunchDataSource
+    var service : LaunchesListDataService
     
-    init(dataSource : LaunchDataSource) {
+    init(dataSource : LaunchDataSource, service: LaunchesListDataService) {
         self.dataSource = dataSource
+        self.service = service
     }
     
     func updateLaunchList () {
         
-        LaunchDataService.shared.updateLaunchList
+        service.updateLaunchList
             { success in
                 guard success else {return } // TODO: handle error, data inaccessable
-                self.dataSource.data.value = LaunchDataService.shared.launchList!
-                self.launchesList = LaunchDataService.shared.launchList!
+                self.dataSource.data.value = self.service.launchList!
+                self.launchesList = self.service.launchList!
             }
     }
     

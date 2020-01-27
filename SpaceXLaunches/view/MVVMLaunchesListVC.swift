@@ -29,7 +29,7 @@ class MVVMLaunchesListViewController: UIViewController {
     }
     
     lazy var viewModel : LaunchesListVM = {
-        let viewModel = LaunchesListVM(dataSource: LaunchDataSource())
+        let viewModel = LaunchesListVM(dataSource: LaunchDataSource(), service: LaunchesListDataService())
         return viewModel
     }()
     

@@ -21,6 +21,7 @@
 		F59239982384721000DD6BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59239962384721000DD6BDF /* LaunchScreen.storyboard */; };
 		F59239A82384885200DD6BDF /* LaunchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59239A72384885200DD6BDF /* LaunchDetailsVC.swift */; };
 		F59239AA2384890800DD6BDF /* LaunchesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59239A92384890800DD6BDF /* LaunchesListVC.swift */; };
+		F5FCF15223DF496D004AB561 /* MVVMLaunchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FCF15123DF496D004AB561 /* MVVMLaunchDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F59239992384721000DD6BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59239A72384885200DD6BDF /* LaunchDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsVC.swift; sourceTree = "<group>"; };
 		F59239A92384890800DD6BDF /* LaunchesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListVC.swift; sourceTree = "<group>"; };
+		F5FCF15123DF496D004AB561 /* MVVMLaunchDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMLaunchDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F52D64F723897C7000A5375C /* LaunchDataService.swift */,
+				F5FCF15123DF496D004AB561 /* MVVMLaunchDataService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				F51B5CB423DC5BE90071AA0E /* LaunchInfoLinks.swift in Sources */,
 				F52D64F823897C7000A5375C /* LaunchDataService.swift in Sources */,
+				F5FCF15223DF496D004AB561 /* MVVMLaunchDataService.swift in Sources */,
 				F51B5CB923DC5D5C0071AA0E /* LaunchDataSource.swift in Sources */,
 				F51B5CB723DC5C680071AA0E /* LaunchesListVM.swift in Sources */,
 				F59239A82384885200DD6BDF /* LaunchDetailsVC.swift in Sources */,
